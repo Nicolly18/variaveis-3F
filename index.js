@@ -14,17 +14,29 @@ console.log(idade);
 
 //agência de viagens Hawaii paris Nova York Rio de Janeiro Tokyo 
 const listaDeDestinos = new Array(
-  "Hawaii",
-  "Paris",
+  " Hawaii",
+  " Paris",
   "Nova York",
   "Rio de Janeiro",
-  "Toquio"
+  "Tóquio"
   );
 
 console.log(listaDeDestinos);
 console.log(listaDeDestinos[3]);
-listaDeDestinos.push("Coronel Vivida");
-listaDeDestinos.push("Curitiba");
-listaDeDestinos.push("Rio Branco");
-listaDeDestinos.push("Berlin");
+listaDeDestinos.push("  Coronel Vivida");
+listaDeDestinos.push(" Curitiba");
+listaDeDestinos.push(" Rio Branco");
+listaDeDestinos.push(" Berlin");
 console.log(listaDeDestinos);
+
+const idadeComprador = 17;
+
+if(idadeComprador >= 18) {
+
+  console.log("Comprador maior de idade");
+  console.log("destinos disponíveis:"  + listaDeDestinos);
+} else {
+console.log("Comprador menor de idade");
+console.log("Não poderá efetuar a compra")
+console.log("você não pode comprar pois é menor de idade");
+  }
