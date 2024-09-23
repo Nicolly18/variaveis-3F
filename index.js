@@ -37,9 +37,22 @@ var idadeComprador = entrada("qual a sua idade?");
 
 if(idadeComprador >= 18) {
   console.log("Comprador maior de idade");
-  console.log("destinos disponíveis:"  + listaDeDestinos);
+console.log("Escolha seu destino");
+  
+   var contador= 0;
+
+  while(contador <9) {
+    console.log(listaDeDestinos[contador] );
+    contador++;
+  }
+var destino = entrada("Digite oo numero que corresponde ao destino selecionado (0-8)");
+console.log(`destino selecionado foi: ${listaDeDestinos[destino]}`);                     
+  
 } else {
 console.log("Olá senhora "  + nomeComprador );
 console.log("Não poderá efetuar a compra")
 console.log("você não pode comprar pois é menor de idade");
-  }
+    }          
+ 
+
+  
