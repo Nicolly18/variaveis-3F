@@ -32,6 +32,20 @@ listaDeDestinos.push(" Curitiba");
 listaDeDestinos.push(" Rio Branco");
 listaDeDestinos.push(" Berlin");
 console.log(listaDeDestinos);
+
+const loginCerto = "Nicolly";
+const senhaCerta = 123;
+
+var login = entrada("qual é o seu login? ");
+var senha = entrada("Digite a sua senha: ")
+while(login != loginCerto || senha != senhaCerta){
+console.log ("Login ou senha incorretos");
+login = entrada("Qual é o seu login?" );
+senha = entrada ("Digite a sua senha: ");
+}
+
+
+
 var nomeComprador = entrada("Digite seu nome: ");
 var idadeComprador = entrada("qual a sua idade?");
 
@@ -49,7 +63,7 @@ var destino = entrada("Digite oo numero que corresponde ao destino selecionado (
 console.log(`destino selecionado foi: ${listaDeDestinos[destino]}`);                     
   
 } else {
-console.log("Olá senhora "  + nomeComprador );
+console.log("Olá senhor(a) "  + nomeComprador );
 console.log("Não poderá efetuar a compra")
 console.log("você não pode comprar pois é menor de idade");
     }          
