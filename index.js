@@ -17,6 +17,11 @@ console.log(idade);
 
 
 //agência de viagens Hawaii paris Nova York Rio de Janeiro Tokyo 
+console.log("_______________________________");
+console.log("     ☼ âgencia de viagens   ☾  ");        
+console.log("_______________🧿________________");
+console.log("  ");
+
 const listaDeDestinos = new Array(
   " Hawaii",
   " Paris",
@@ -35,8 +40,11 @@ console.log(listaDeDestinos);
 
 const loginCerto = "Nicolly";
 const senhaCerta = 123;
+var login = entrada("dados para acesso ao sistema: ");
 
-var login = entrada("qual é o seu login? ");
+
+
+
 var senha = entrada("Digite a sua senha: ")
 while(login != loginCerto || senha != senhaCerta){
 console.log ("Login ou senha incorretos");
@@ -50,7 +58,7 @@ var nomeComprador = entrada("Digite seu nome: ");
 var idadeComprador = entrada("qual a sua idade?");
 
 if(idadeComprador >= 18) {
-  console.log("Comprador maior de idade");
+  console.log("Acesso liberado comprador maior de idade");
 console.log("Escolha seu destino");
   
    var contador= 0;
@@ -65,7 +73,7 @@ console.log(`destino selecionado foi: ${listaDeDestinos[destino]}`);
 } else {
 console.log("Olá senhor(a) "  + nomeComprador );
 console.log("Não poderá efetuar a compra")
-console.log("você não pode comprar pois é menor de idade");
+console.log("Não poderá realizar a compra pois é menor de idade");
     }          
  
 
